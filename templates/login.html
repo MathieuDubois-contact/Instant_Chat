@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Login</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../static/css/site.css ">
 </head>
 <body>
-<center>
-<br><br><br>
-<b>Login</b>
-<br><br><br>
-<form action="/connection/" method="POST">
-<br>
-    <textarea 
-            name="username" 
-            rows="1" 
-            cols="18"></textarea><br>
-    <br>
-    <p>Password:</p>
-    <br>
-    <textarea name="password" 
-              rows="1" 
-              cols="18"
-              required style="-webkit-text-security: circle" 
-              type="text" ></textarea><br>
-    <input type="submit" value="Submit">
+
+<div class="container">
+<h1>Login</h1>
+<form action="/connection/" method="POST" class="form-login">
+
+      <label for="username">Username</label>
+      <input name="username" id="username" type="text" placeholder="Username" autocomplete="username"></input>
+
+      <label for="password">Password</label>
+      <input name="password" id="password" type="password" placeholder="Password" autocomplete="current-password"></input>
+          <div class="b2">
+        <label for="see">Show password</label>
+        <input type="checkbox" id="see" name="see">
+      </div>
+      <input type="submit" value="Login" class="btn login mg-20">
 </form>
-
-</center>
-
+</div>
 </body>
+<script src="/static/js/app.js"></script>
+</html>

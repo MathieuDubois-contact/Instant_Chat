@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+:root {
+    --color1: #0068ff;
+    --color2: #009fff;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto 100px;
+    align-items: center;
+}
+
+.btn {
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    transition: .6s ease-in-out;
+    border: none;
+}
+
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.login {
+    background-color: var(--color1);
+}
+
+.others {
+    background-color: var(--color2);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    text-align: center;
+}
+
+.mg-20 {
+    margin: 20px;
+}
+
+@media screen and (max-width: 728px) {
+    body {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+.form-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-login>input[type="text"],
+input[type="password"] {
+    background-color: #e6e6e6;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.simple-link {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+label {
+    font-weight: 700;
+}
+
+.b2 {
+    display: flex;
+    align-items: center;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: black;
+}

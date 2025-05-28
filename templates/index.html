@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Index</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instant_Chat</title>
+  <link rel="stylesheet" href="../static/css/site.css ">
 </head>
 <body>
+  <nav>
+    <img src="/static/logo.webp" width="200" height="auto" alt="logo of website" loading="eager">
+    <a href="login/" class="btn login">Login</a>
+  </nav>
+  <div class="container">
 
-<center>
-        <br><br><br>
-        <b>Welcome to your friendly Chat Application</b>
-        <br><br><br>
+    <h1>Welcome to your friendly Chat Application</h1>
 
-<ul style="display:inline-block; text-align:left;">
+    
+    <a href="login/" class="btn login mg-20">Login</a>
 
-<li>
-<a href="login/">login</a>
-</li>
+    <a href="create_account/" class="btn others">Create Account</a>
 
-<li>
-<a href="create_account/">create_account</a>
-</li>
+    <br>
+    <br>
+    <h2>Philosophy</h2>
 
-</ul>
+    <p>The server does not make use of cookies to authenticate users after their connection, but rather of a randomly
+      temporary password authentication mechanism. </p>
 
-<br><br>
+    <p>So, everytime the user get out of the website, he is disconnected.</p>
 
-<img src="/static/logo.jpg">
+    <p>And he has to click only on the website link to go back for example if he does not want to be disconnected.</p>
 
-<br><br>
-
-<b>Philosophy</b>
-
-<p>The server does not make use of cookies to authenticate users after their connection, but rather of a randomly temporary password authentication mechanism. </p>
-
-<p>So, everytime the user get out of the website, he is disconnected.</p>
-
-<p>And he has to click only on the website link to go back for example if he does not want to be disconnected.</p>
-
-<p>Because the server does not communicate an authentication cookie, and that pasing a password by URL is not secure, each time the user connects to the account, a temporary random password is generated only available for next connection on the next page. When he connects to the next page, the same mechanism is applied until the user get out of the website. </p>
-
-
-</center>
-
+    <p>Because the server does not communicate an authentication cookie, and that pasing a password by URL is not
+      secure, each time the user connects to the account, a temporary random password is generated only available for
+      next connection on the next page. When he connects to the next page, the same mechanism is applied until the user
+      get out of the website. </p>
+  </div>
 </body>
+</html>
